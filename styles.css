@@ -5,17 +5,21 @@
     text-decoration: none;
     list-style-type: none;
 }
+body{
+    background-color: black;
+}
 .header__logo{
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
+    margin-top: 20px;
     
 }
 header{
-    background-color: #d13e1c;
+    background-color: black;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     height: 65px;
     padding: 0 30px;
@@ -38,15 +42,43 @@ header{
 }
 .navbar__list a {
     font-size: 20px;
-    color: white;
+    color: grey;
 }
 .navbar__list li:first-child>a {
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
-    
-.header__barra input {
-    border-radius: 7px;
-    width: 300px;
-
+.iniciar a{
+    font-size: 20px;
+    font-weight: 800;
+}
+.iniciar span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.iniciar{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+.registro{
+    background-color: blue;
+    color: white;
+    width: 140px;
+}
+.sesion{
+    color: white;
+}
+.inicios{
+    display: flex;
+    gap: 20px;
+}
+.linea{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 65px;
+    position: absolute;
+    z-index: 2;
 }
