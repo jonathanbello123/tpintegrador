@@ -5,17 +5,19 @@
     text-decoration: none;
     list-style-type: none;
 }
-body{
+
+body {
     background-color: black;
 }
-.header__logo{
-    width: 150px;
-    height: 150px;
+
+.header__logo {
+    width: 120px;
+    height: 50px;
     cursor: pointer;
-    margin-top: 20px;
-    
+
 }
-header{
+
+header {
     background-color: black;
     width: 100%;
     height: 65px;
@@ -23,90 +25,216 @@ header{
     position: fixed;
     top: 0;
     z-index: 2;
-    
+
+
 }
+
 .header__nav,
 .navbar__list {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+
 }
 
-.header__nav{
+.header__nav {
     gap: 150px;
 }
-.navbar__list{
+
+.navbar__list {
     gap: 30px;
 }
+
 .navbar__list a {
     font-size: 20px;
     color: grey;
 }
+
 .navbar__list li:first-child>a {
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color:  #efb810;
 }
-.iniciar a{
+
+.iniciar a {
     font-size: 20px;
     font-weight: 800;
 }
-.iniciar span{
+
+.iniciar span {
     font-size: 20px;
     font-weight: 600;
 }
-.iniciar{
-    border: 1px solid white;
+
+.iniciar {
+    border: 1px solid rgba(252, 218, 2, 0.636);
     border-radius: 5px;
     width: 100px;
     text-align: center;
 }
-.registro{
+
+.registro {
     background-color: blue;
     color: white;
     width: 140px;
 }
-.sesion{
+
+.sesion {
     color: white;
     background-color: rgb(14, 14, 134);
 }
-.inicios{
+
+.inicios {
     display: flex;
     gap: 20px;
 }
-.linea{
+
+/* .linea {
     width: 80%;
     height: 1px;
     background-color: white;
     margin-top: 65px;
     position: absolute;
     z-index: 2;
-}
-.contenedor{
+} */
+
+
+.contenedor {
     width: 80%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     height: 65px;
     margin: auto;
 }
-main{
-    background-color: black;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-}
-#hero{
-         margin-top: 65px;
-        padding: 70px 0;
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
 
-p{
+main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
+}
+
+#hero {
+    margin-top: 65px;
+    padding: 70px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 40px;     
+    
+
+}
+
+.hero-info h1 {
+    color: #c5960b;
+    font-size: 50px;
+    font-weight: 800;
+
+}
+
+p {
     color: red;
 }
+
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-info a{
+    color: white;
+    background-color: #efb810;
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    
+    
+}
+.botones{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hero-info p {
+    font-size: 24px;
+    width: 70%;
+    color: rgb(10, 55, 255);
+    font-weight: 1000;
+}
+
+.hero-info p>span {
+    font-weight: 800;
+    color: #efb810;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    gap: 15px;
+    margin-top: 27px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.beneficios-cards {
+    color: var(--text-principal);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+}
+.ventajas{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+.ventajas2{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+
+}
+.beneficios-cards h2{
+    color: white;
+    /* border-bottom: 1px solid white; */
+}
+.beneficios-cards p{
+    color: white;
+    font-size: 15px;
+}
+.espacio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.espacio h2{
+    border: 1px dashed #efb810;
+    border-radius: 15px;
+}
+.contenedor1 img{
+    width: 400px;
+    height: 500px;
+}
+
