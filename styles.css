@@ -169,14 +169,16 @@ main {
     align-items: center;
 }
 
-.hero-info p {
+.hero-info {
     font-size: 30px;
     width: 70%;
     color: rgb(255, 255, 255);
     font-weight: 1000;
-    background-color: rgb(19, 18, 18);
-    border-radius: 20px;
+}
 
+.card-content {
+    background-color: rgba(19, 18, 18, 0.6);
+    border-radius: 20px;
 }
 
 .hero-info p>span {
@@ -252,6 +254,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .espacio h2 {
@@ -270,4 +273,9 @@ main {
     font-size: 30px;
     color: #efb810;
     font-weight: bold;
+}
+
+ben-content {
+    background-color: rgba(19, 18, 18, 0.2);
+    border-radius: 20px;
 }
