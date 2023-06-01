@@ -26,7 +26,6 @@ header {
     top: 0;
     z-index: 2;
 
-
 }
 
 .header__nav,
@@ -40,6 +39,7 @@ header {
 
 .header__nav {
     gap: 150px;
+    padding-left: 85px;
 }
 
 .navbar__list {
@@ -53,7 +53,7 @@ header {
 
 .navbar__list li:first-child>a {
     font-weight: 600;
-    color:  #efb810;
+    color: #efb810;
 }
 
 .iniciar a {
@@ -87,6 +87,7 @@ header {
 .inicios {
     display: flex;
     gap: 20px;
+    padding-left: 70px;
 }
 
 /* .linea {
@@ -115,11 +116,13 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
-    background-size: contain;
+    background-image: url(assets/cards/difuminado.png);
+    /* background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg); */
+    background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 
 }
 
@@ -130,56 +133,58 @@ main {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    gap: 40px;     
-    
+    gap: 40px;
+    height: 700px;
 
 }
 
 .hero-info h1 {
     color: #c5960b;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 800;
-
 }
 
-p {
-    color: red;
-}
-
-
-.hero-info{
+.hero-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.hero-info a{
+
+.hero-info a {
     color: white;
     background-color: #efb810;
-    width: 120px;
+    width: 150px;
     padding: 8px 0;
     border-radius: 10px;
     font-size: 14px;
     text-align: center;
-    
-    
+    font-weight: bold;
+
+
 }
-.botones{
+
+.botones {
     display: flex;
     gap: 10px;
     align-items: center;
 }
+
 .hero-info p {
-    font-size: 24px;
+    font-size: 30px;
     width: 70%;
-    color: rgb(10, 55, 255);
+    color: rgb(255, 255, 255);
     font-weight: 1000;
+    background-color: rgb(19, 18, 18);
+    border-radius: 20px;
+
 }
 
 .hero-info p>span {
     font-weight: 800;
     color: #efb810;
 }
-#cards{
+
+#cards {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -187,7 +192,13 @@ p {
     width: 80%;
     text-align: center;
     gap: 15px;
-    margin-top: 27px;
+    margin-top: 65px;
+    padding: 70px 0;
+}
+
+#cards {
+    font-size: 30px;
+    font-weight: 800;
 
 }
 
@@ -197,44 +208,66 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.container p {
+    border: 2px solid #efb810;
+    border-radius: 20px;
+}
+
 .beneficios-cards {
-    color: var(--text-principal);
     display: flex;
     flex-direction: column;
     width: 400px;
     height: 400px;
     padding: 30px;
 }
-.ventajas{
+
+.ventajas {
     color: white;
-    font-size: 30px;
+    font-size: 100px;
     font-weight: 800;
 }
-.ventajas2{
+
+.ventajas2 {
     font-size: 20px;
     font-weight: 600;
     color: white;
 
 }
-.beneficios-cards h2{
+
+.beneficios-cards h2 {
     color: white;
     /* border-bottom: 1px solid white; */
 }
-.beneficios-cards p{
-    color: white;
-    font-size: 15px;
+
+.beneficios-cards p {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-color: rgb(19, 18, 18);
+
+
 }
-.espacio{
+
+.espacio {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.espacio h2{
-    border: 1px dashed #efb810;
+
+.espacio h2 {
+    color: #efb810;
     border-radius: 15px;
+    background-color: rgb(19, 18, 18);
 }
-.contenedor1 img{
+
+.contenedor1 img {
     width: 400px;
     height: 500px;
 }
 
+.info {
+    text-align: center;
+    font-size: 30px;
+    color: #efb810;
+    font-weight: bold;
+}
