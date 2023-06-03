@@ -12,20 +12,20 @@
 <body>
     <header>
         <div class="contenedor">
-            <img src="assets/navbar/logo.png" alt="logo" class="header__logo">
+            <a href="index.html"><img src="assets/login/logo.png" alt="logo" class="header__logo"></a>
             <nav class="header__nav">
                 <ul class="navbar__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Beneficios</a></li>
-                    <li><a href="#">productos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#cards">Beneficios</a></li>
+                    <li><a href="#products">productos</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
                     <li><a href="#">Nosotros</a></li>
                 </ul>
 
             </nav>
             <div class="inicios">
-                <div class="iniciar sesion"><span>Entrar</span></div>
-                <div class="iniciar registro"><span>Registrarme</span></div>
+                <div class="iniciar sesion"><a href="login.html"><span>Entrar</span></div></a>
+                <div class="iniciar registro"><a href="registro.html"><span>Registrarme</span></div></a>
             </div>
         </div>
 
@@ -55,12 +55,6 @@
                     <a href="#">Registrarme</a>
                 </div>
             </div>
-            <div class="contenedor1">
-                <div class="hero-card">
-                    <!-- <img clsas="cine__img" src="assets/cards/asdasd.jpg" alt=""> -->
-                </div>
-            </div>
-
         </section>
         <p class="info">¿Te encanta el cine de acción? ¿Eres fanático del cine de terror? ¿O tal vez prefieres las
             películas románticas? No importa cuáles sean tus preferencias, nuestro algoritmo de recomendación
@@ -87,8 +81,7 @@
                     <div class="espacio">
                         <h2>Beneficio 2</h2>
                         <p>Sin publicidad intrusiva: NYXFILMS esta diseñada para evitar la publicidad intrusiva y
-                            molesta que interrumpe tu experiencia de visualización. Podrás disfrutar de una experiencia
-                            libre de anuncios o con anuncios mínimos que no sean intrusivos.</p>
+                            molesta que interrumpe tu experiencia de visualización.</p>
                     </div>
                 </div>
                 <div class="beneficios-cards">
@@ -96,7 +89,7 @@
                     <div class="espacio">
                         <h2>Beneficio 3</h2>
                         <p>Recomendaciones personalizadas: Al utilizar técnicas de inteligencia artificial, te
-                            ofreceremos recomendaciones personalizadas en base a tus preferencias. </p>
+                            ofreceremos recomendaciones personalizadas. </p>
                     </div>
                 </div>
 
@@ -104,12 +97,94 @@
             </div>
 
         </section>
-        <p class="info"></p>
+        <section id="products">
+            <h2 class="pro-text">Productos</h2>
+            <div class="container-products">
+                <div class="cards-products">
+                    <img src="assets/jhon.PNG" alt="">
+                    <div class="products-info">
+                        <h3 class="item-tittle">Combo <span>Normal</span> </h3>
+                        <ul>
+                            <li>2 perfiles</li>
+                            <li>sin contenido exclusivo</li>
+                            <li>Baja definicion</li>
+                            <li>nada de estrenos unicos</li>
+                        </ul>
+                        <div class="price-bot">
 
+                            <span class="item-price">25 usd</span>
 
+                        </div>
 
+                    </div>
+                    <div class="container-compra">
+                        <div class="Compra"><span>Lo quiero YA!</span></div>
+                    </div>
+                </div>
+                <div class="cards-products">
+                    <img src="assets/mario.PNG" alt="">
+                    <div class="products-info">
+                        <h3 class="item-tittle">Combo <span>Pro</span></h3>
+                        <ul>
+                            <li>3 perfiles</li>
+                            <li>Contenido exclusivo</li>
+                            <li>Baja definicion</li>
+                            <li>estrenos unicos</li>
+                        </ul>
+                        <span class="item-price">75 usd</span>
+                    </div>
+                    <div class="container-compra">
+                        <div class="Compra"><span>Lo quiero YA!</span></div>
+                    </div>
+                </div>
+                <div class="cards-products">
+                    <img src="assets/ryf.PNG" alt="">
+                    <div class="products-info">
+                        <h3 class="item-tittle">Combo <span>Premium</span></h3>
+                        <ul>
+                            <li>5 perfiles</li>
+                            <li>Contenido exclusivo</li>
+                            <li>alta definicion</li>
+                            <li>estrenos unicos</li>
+                        </ul>
+                        <span class="item-price">100 usd</span>
+                    </div>
+                    <div class="container-compra">
+                        <div class="Compra"><span>Lo quiero YA!</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contacto">
+            <span class="h2_con"> Dejanos contactarte!</span>
+            <h3 class="h3_con">Escribinos tus datos para que nosotros podamos comunicarnos con vos y asi ayudarte 😉
+            </h3>
+            <div class="formulario">
+
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="">Observaciones:</label>
+                    <textarea name="" id="" cols="15" rows="2"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
 
     </main>
+    <footer id="footer">
+        <div class="logo-footer"></div>
+        <img src="assets/logo.png" alt="logo-footer" class="logo-f3">
+        <span>@2023 Copyrigth:NYXFILMS.com</span>
+
+    </footer>
 
 
 </body>

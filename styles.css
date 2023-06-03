@@ -1,3 +1,12 @@
+:root {
+    --background-color: #000000;
+    --background: rgba(19, 18, 18, 0.9);
+    --text: #ffffff;
+    --text-especial: #efb810;
+    --backbtn: #0000ff;
+    --btnsub: #4caf50;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--background-color)
 }
 
 .header__logo {
@@ -18,7 +27,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: var(--background-color);
     width: 100%;
     height: 65px;
     padding: 0 30px;
@@ -53,7 +62,7 @@ header {
 
 .navbar__list li:first-child>a {
     font-weight: 600;
-    color: #efb810;
+    color: var(--text-especial)
 }
 
 .iniciar a {
@@ -67,21 +76,21 @@ header {
 }
 
 .iniciar {
-    border: 1px solid rgba(252, 218, 2, 0.636);
+    border: 1px solid var(--text-especial);
     border-radius: 5px;
     width: 100px;
     text-align: center;
 }
 
 .registro {
-    background-color: blue;
-    color: white;
+    background-color: var(--backbtn);
+    color: var(--text);
     width: 140px;
 }
 
 .sesion {
-    color: white;
-    background-color: rgb(14, 14, 134);
+    color: var(--text);
+    background-color: var(--backbtn);
 }
 
 .inicios {
@@ -89,15 +98,6 @@ header {
     gap: 20px;
     padding-left: 70px;
 }
-
-/* .linea {
-    width: 80%;
-    height: 1px;
-    background-color: white;
-    margin-top: 65px;
-    position: absolute;
-    z-index: 2;
-} */
 
 
 .contenedor {
@@ -110,14 +110,13 @@ header {
 }
 
 main {
-    background-color: black;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(assets/cards/difuminado.png);
-    /* background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg); */
+    background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
@@ -139,7 +138,7 @@ main {
 }
 
 .hero-info h1 {
-    color: #c5960b;
+    color: var(--text-especial);
     font-size: 70px;
     font-weight: 800;
 }
@@ -151,8 +150,8 @@ main {
 }
 
 .hero-info a {
-    color: white;
-    background-color: #efb810;
+    color: var(--text);
+    background-color: var(--text-especial);
     width: 150px;
     padding: 8px 0;
     border-radius: 10px;
@@ -172,18 +171,18 @@ main {
 .hero-info {
     font-size: 30px;
     width: 70%;
-    color: rgb(255, 255, 255);
+    color: var(--text);
     font-weight: 1000;
 }
 
 .card-content {
-    background-color: rgba(19, 18, 18, 0.6);
+    background-color: var(--background);
     border-radius: 20px;
 }
 
 .hero-info p>span {
     font-weight: 800;
-    color: #efb810;
+    color: var(--text-especial);
 }
 
 #cards {
@@ -194,7 +193,7 @@ main {
     width: 80%;
     text-align: center;
     gap: 15px;
-    margin-top: 65px;
+    margin-top: 200px;
     padding: 70px 0;
 }
 
@@ -212,7 +211,7 @@ main {
 }
 
 .container p {
-    border: 2px solid #efb810;
+    border: 2px solid var(--text-especial);
     border-radius: 20px;
 }
 
@@ -225,27 +224,28 @@ main {
 }
 
 .ventajas {
-    color: white;
+    color: var(--text-especial);
     font-size: 100px;
     font-weight: 800;
+
 }
 
+
 .ventajas2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    color: white;
+    color: var(--text);
 
 }
 
 .beneficios-cards h2 {
-    color: white;
-    /* border-bottom: 1px solid white; */
+    color: var(--text);
 }
 
 .beneficios-cards p {
-    color: rgb(255, 255, 255);
+    color: var(--text);
     font-size: 25px;
-    background-color: rgb(19, 18, 18);
+    background-color: var(--background);
 
 
 }
@@ -260,7 +260,7 @@ main {
 .espacio h2 {
     color: #efb810;
     border-radius: 15px;
-    background-color: rgb(19, 18, 18);
+    background-color: var(--background);
 }
 
 .contenedor1 img {
@@ -271,11 +271,170 @@ main {
 .info {
     text-align: center;
     font-size: 30px;
-    color: #efb810;
+    color: var(--text-especial);
     font-weight: bold;
+    background-color: var(--background);
+    border-radius: 20px;
 }
 
-ben-content {
+
+.ben-content {
     background-color: rgba(19, 18, 18, 0.2);
     border-radius: 20px;
+}
+
+#products {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    gap: 15px;
+    margin-top: 250px;
+    padding: 70px 0;
+
+}
+
+.pro-text {
+    color: var(--text);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.container-products {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-direction: row;
+
+}
+
+.products-info {
+    background-color: var(--background);
+    border-radius: 20px;
+
+}
+
+.products-info h3,
+span {
+    color: var(--text-especial);
+}
+
+.products-info ul {
+    color: var(--text);
+}
+
+.item-tittle span {
+    color: red;
+}
+
+.pro-text {
+    padding: 50px;
+}
+
+.price-bot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-compra {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backbtn);
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid var(--text-especial);
+}
+
+#Contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 250px;
+    padding: 70px 0;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.h2_con {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text);
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+.h3_con {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-especial);
+    background-color: var(--background);
+    border-radius: 20px;
+}
+
+.input_c {
+    background-color: var(--text);
+    height: 50px;
+}
+
+.formulario {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    border: 2px solid var(--text-especial);
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--btnsub);
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background-color);
 }

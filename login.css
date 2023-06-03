@@ -1,0 +1,96 @@
+:root {
+    --background-color: #000000;
+    --background: rgba(19, 18, 18, 0.9);
+    --text: #ffffff;
+    --text-especial: #efb810;
+    --backbtn: #0000ff;
+    --btnsub: #4caf50;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#body_login {
+    height: 900px;
+    background-image: url(assets/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
+    background-size: cover;
+}
+
+#main_login {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio__sesion {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--background);
+
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-especial);
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--btnsub);
+    color: var(--text);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--text-especial);
+}
+
+.olvide {
+    cursor: pointer;
+    color: var(--text-especial);
+    ;
+
+}
+
+.no-c {
+    color: var(--text);
+}
+
+.Register {
+    color: var(--text-especial);
+}
+
+.Register:hover {
+    color: var(--text);
+}
