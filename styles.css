@@ -19,6 +19,8 @@ body {
     background-color: var(--background-color)
 }
 
+/* NAV BAR*/
+
 .header__logo {
     width: 120px;
     height: 50px;
@@ -113,6 +115,8 @@ header {
     display: none;
 }
 
+/* MAIN*/
+
 main {
     background-color: var(--background-color);
     display: flex;
@@ -193,6 +197,8 @@ main {
     color: white;
 }
 
+/* BENEFICIOS */
+
 #cards {
     display: flex;
     justify-content: center;
@@ -203,13 +209,11 @@ main {
     gap: 15px;
     margin-top: 200px;
     padding: 70px 0;
-}
-
-#cards {
     font-size: 30px;
     font-weight: 800;
-
 }
+
+
 
 .container {
     display: flex;
@@ -291,6 +295,9 @@ main {
     border-radius: 20px;
 }
 
+
+/* PRODUCTOS */
+
 #products {
 
     display: flex;
@@ -359,6 +366,8 @@ span {
     cursor: pointer;
     border: 2px solid var(--text-especial);
 }
+
+/* CONTACTO*/
 
 #Contacto {
     display: flex;
@@ -437,6 +446,7 @@ span {
     font-size: 16px;
 }
 
+/* FOOTER*/
 #footer {
 
     display: flex;
@@ -451,6 +461,8 @@ span {
 .menu-label {
     display: none;
 }
+
+/* wpp*/
 
 .whatsapp {
     position: fixed;
