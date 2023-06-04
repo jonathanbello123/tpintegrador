@@ -7,25 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <a href="https://api.whatsapp.com/send?phone=1157745108" target="_blank"><img src="assets/wpp/whatsapp.png" alt=""
+            class="whatsapp"></a>
     <header>
         <div class="contenedor">
-            <a href="index.html"><img src="assets/login/logo.png" alt="logo" class="header__logo"></a>
+            <a href="index.html"><img src="assets/navbar/logo.png" alt="logo" class="header__logo"></a>
             <nav class="header__nav">
+                <label for="menu-toggle" class="menu-label">
+                    <span class="material-icons">
+                        list
+                    </span>
+                </label>
+                <input type="checkbox" id="menu-toggle">
                 <ul class="navbar__list">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#cards">Beneficios</a></li>
                     <li><a href="#products">productos</a></li>
                     <li><a href="#Contacto">Contacto</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li class="i_s"><a href="login.html">Iniciar sesion</a></li>
+
                 </ul>
+
 
             </nav>
             <div class="inicios">
                 <div class="iniciar sesion"><a href="login.html"><span>Entrar</span></div></a>
-                <div class="iniciar registro"><a href="registro.html"><span>Registrarme</span></div></a>
             </div>
         </div>
 
@@ -52,7 +63,7 @@
                 </div>
                 <div class="botones">
                     <a href="#">Suscribirme YA!</a>
-                    <a href="#">Registrarme</a>
+                    <a href="registro.html">Registrarme</a>
                 </div>
             </div>
         </section>
