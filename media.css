@@ -214,6 +214,10 @@
         padding: 0;
     }
 
+    .container-compra {
+        width: 20%;
+    }
+
     .pro-text {
         color: var(--text-especial);
     }
