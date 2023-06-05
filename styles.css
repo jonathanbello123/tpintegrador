@@ -124,7 +124,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(assets/cards/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
+    background-image: url(assets/main-fondo/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);

@@ -160,6 +160,7 @@
 
     }
 
+
 }
 
 @media (max-width: 576px) {
@@ -221,4 +222,11 @@
     .pro-text {
         color: var(--text-especial);
     }
+
+    #Contacto {
+        width: 70%;
+    }
+
+
+
 }
